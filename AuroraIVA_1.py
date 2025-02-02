@@ -1,5 +1,5 @@
 # Aurora Airlines
-# This code implements a GILIICAPRA (Greeting, Identify, Listen, Intent, Confirm, Act, and Provide Closure) exchange for Aurora Airlines customer service.
+# This code implements a GILIICAPRA (Greeting, Identify, Listen, Intent, Confirm, Act, and Provide Closure) exchange for Aurora Airlines intelligent virtual assistant.
 #
 # The system is designed to handle a variety of intents, including booking flights, checking flight status, providing general information about the airline, answering questions about the frequent flyer program, and providing information about baggage policies.
 #
@@ -136,7 +136,7 @@ def bot_to_file(transcript):
 
 
 def is_affirmative(text):
-    affirmative_keywords = ["yes", "yeah", "yep", "sure", "correct", "right", "affirmative", "okay", "ok", "right","absolutely"]
+    affirmative_keywords = ["yes", "yeah", "yep", "sure", "correct", "true", "right", "affirmative", "okay", "ok", "right","absolutely"]
     text = text.lower()
     
     for keyword in affirmative_keywords:
@@ -146,7 +146,7 @@ def is_affirmative(text):
     return False  # Return False if no affirmative keyword is found
 
 def is_negative(text):
-    negative_keywords = ["no", "nope", "incorrect", "wrong", "not really", "nah"]
+    negative_keywords = ["no", "nope", "incorrect", "wrong", "not really", "nah", "negative"]
     text = text.lower()
     
     for keyword in negative_keywords:
@@ -254,10 +254,10 @@ responses = {
 }
 
 intent_keywords = {
-    "booking": ["book", "reserve", "flight", "flights", "to"],
-    "flight_status": ["status", "flight", "delay", "cancel", "late", "delayed", "arrive", "arrival", "depart", "departure"],
-    "general_information": ["information", "policy", "route", "airline", "offer", "pets", "meal"],
-    "frequent_flyer": ["frequent flyer", "miles", "rewards", "points"],
+    "booking": ["book", "reserve", "flight", "flights", "to", "from"],
+    "flight_status": ["status", "flight", "delay", "cancel", "late", "delayed", "arrive", "arrival", "time", "depart", "departure"],
+    "general_information": ["information", "policy", "route", "airline", "offer", "offers", "pets", "meal", "food", "allowances"],
+    "frequent_flyer": ["frequent flyer", "miles", "rewards", "points", "perks", "benefits"],
     "baggage_information": ["baggage", "luggage", "carry on", "checked", "allowance", "bag", "weight"]
 }
 
@@ -304,7 +304,7 @@ def get_audio_input():
 
 if __name__ == "__main__":
     # Greet user and ask for their query
-    text_to_speech("Hello! Welcome to Aurora Airline's customer service. How can we assist you today?")
+    text_to_speech("Hello! Welcome to Aurora Airline's Intelligent Virtual Assistant. How can we assist you today?")
     
     # Prompt user for audio input method
     audio_input_method = get_audio_input()
