@@ -1,11 +1,11 @@
-# Aurora-Airlines-IVR
+# Aurora-Airlines-IVA
 
-Welcome to the Aurora Airlines IVR (Interactive Voice Response) System repository! This project is a simulated IVR system designed for an airline, allowing customers to interact with the system via voice or keypad inputs to perform various tasks such as flight booking, flight status checks, and more.
+Welcome to the Aurora Airlines IVA (Intelligent Virtual Assistant) System repository! This project is an AI-driven virtual assistant designed for an airline, allowing customers to interact with the system via voice or keypad inputs to perform various tasks such as flight booking, flight status checks, and more.  
 
 ## Overview
-The Aurora Airlines IVR System is a Python-based application that mimics the functionality of a real-world IVR system used by airlines. It provides a user-friendly interface for customers to access essential services without the need for human intervention. The system is built to handle common airline-related queries and transactions efficiently.
+The Aurora Airlines IVA System is a Python-based application that enhances traditional IVR (Interactive Voice Response) systems with AI-powered capabilities. It provides a user-friendly interface for customers to access essential services without the need for human intervention. The system is built to handle common airline-related queries and transactions efficiently.
 
-## IVR System Highlights:
+## IVA System Highlights:
 
 -  **Flight Information:** Customers can inquire about flight schedules, statuses, and other relevant details.
 -  **Reservations:** The IVR system allows users to book, modify, or cancel reservations through voice prompts.
